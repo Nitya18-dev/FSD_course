@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <fieldset>
+        <legend>Form</legend><br>
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your First name" required><br><br>
+        <label for="name">Last Name:</label>
+        <input type="text" name="name" id="lname" placeholder="Enter your Last name" required><br><br>
+        <label type="text" for="Email">Email:</label>
+        <input type="email" name="email" id="Email" placeholder="Enter your email" required><br><br>
+        <label type="Ph.no." name="Phone No." id="Phone No.">Phone No.</label> 
+        <input type="tel" name="Phone No." id="Phone No." placeholder="Enter your Phone No." required><br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="gender" id="Gender"> male  
+        <input type="radio" name="gender" id="Gender"> Female <br><br>
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" name="skills" id="skills"> HTML<br>
+        <input type="checkbox" name="skills" id="skills"> CSS<br> 
+        <input type="checkbox" name="skills" id="skills"> JavaScript<br><br>
+        <!-- <input type="button" value="Submit" onclick="alert('Form submitted!')"><br><br> -->
+         <input type="button" type="submit" onclick=Savedata() value="Submit" > <br><br>
+         <input type="reset" >
+    </fieldset>
+    </form>
+    <script> 
+        function Savedata(){
+            
+            const fname= document.getElementById('name').value;
+            const lname= document.getElementById('lname').value;
+            const email= document.getElementById('Email').value;
+            const phno= document.getElementById('Phone No.').value;
+            const gender = document.querySelector('input[name="gender"]:checked')?.value || "Not selected";
+            const skills = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(skill => skill.value);
+
+            console.log(fname);
+            console.log(lname); 
+            console.log(email);
+            console.log(phno);
+            console.log(gender);
+            console.log(skills);
+            alert("Data saved successfully!");
+        }
+        
+    </script>
+</body>
+</html>
