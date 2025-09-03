@@ -1,0 +1,35 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.main-section {
+  padding: 60px 0;
+  min-width: 100%;
+  min-height: 480px;
+}
+.main-text h1 {
+  font-weight: 700;
+}
+
+.brand-logo {
+  width: 25px;
+  height: 25px;
+  background-color: #007bff;
+  margin-right: 20px;
+}
+
+.main-section .container .row  {
+  min-width: 100%;
+  min-height: 480px;
+}
+
+.heading{
+  margin-top: 20px;
+}
+
+.img{
+  height: 50px;
+  width: 50px;
+}

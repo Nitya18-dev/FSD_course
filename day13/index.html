@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northridge Academy</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+.body{
+  background: url(https://www.gettyimages.com/photos/navy-blue);
+}
+
+    .hero-section {
+      position: relative;
+      background-image: url('017707f7-c6cb-465a-8031-d2afc62b391d.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 28, 64, 0.75); 
+      /* navy overlay */
+   
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .rounded-image {
+      /* width: 100%; */
+      max-width: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    .navbar{
+      background-color: rgba(0, 28, 64, 0.75);
+    }
+  </style>
+</head>
+<body>
+    <!--Nav Bar  -->
+    <nav class="navbar ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Bootstrap
+        </a>
+      </div>
+    </nav>
+    <!--  -->
+  <header class="hero-section">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-md-6 text-white">
+          <h1 class="display-5 fw-bold">
+            Shaping Futures, Building Leaders
+          </h1>
+          <p class="lead">
+            Northridge Academy offers a world-class education that empowers students to excel academically and personally in a supportive, innovative environment.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-primary">Discover More</a>
+            <a href="#" class="btn btn-warning text-dark">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6 text-center mt-5 mt-md-0">
+          <img
+            src="https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg"
+            alt="Teacher"
+            class="rounded-image shadow"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

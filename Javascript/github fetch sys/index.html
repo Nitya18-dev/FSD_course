@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub User Card</title>
+</head>
+<body>
+
+  <input type="text" id="usernameInput" placeholder="Enter GitHub username">
+  <button id="searchBtn">Search</button>
+
+  <div id="card" style="border: solid 1px black;">
+    <img id="avatar" src="" width="100"><br><br>
+    <b>Name:</b> <span id="name">-</span><br>
+    <b>Username:</b> <span id="login">-</span><br>
+    <b>Repos:</b> <span id="repos">-</span><br>
+    <b>Followers:</b> <span id="followers">-</span><br>
+    <b>Following:</b> <span id="following">-</span><br>
+    <a id="profileLink" href="" target="_blank">GitHub Profile</a>
+  </div>
+
+  <div id="error" style="color:red; margin-top:10px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub User Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">GitHub User Lookup</h2>
+
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <div class="input-group">
+          <input type="text" id="usernameInput" class="form-control" placeholder="Enter GitHub username">
+          <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+        <div id="error" class="text-danger mt-2"></div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div id="card" class="card text-center" style="display: none;">
+          <img id="avatar" src="" class="card-img-top" alt="Avatar">
+          <div class="card-body">
+            <h5 class="card-title"><span id="name">-</span></h5>
+            <p class="card-text">@<span id="login">-</span></p>
+            <p class="card-text">
+              <strong>Repos:</strong> <span id="repos">-</span><br>
+              <strong>Followers:</strong> <span id="followers">-</span><br>
+              <strong>Following:</strong> <span id="following">-</span>
+            </p>
+            <a id="profileLink" href="" class="btn btn-dark" target="_blank">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
